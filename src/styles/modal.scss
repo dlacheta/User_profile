@@ -1,0 +1,27 @@
+.ReactModalPortal .ReactModal__Overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal {
+  @extend %box-shadow-radius;
+  background: $light_background;
+  outline: none;
+  width: 300px;
+  padding: 20px;
+  font-family: $main-font;
+  color: $main-text;
+  position: relative;
+}
+.modal__title {
+  margin-top: 0;
+  color: $users-names;
+}
+.close-button {
+  font-size: $icon-size;
+  color: $light-icon-color;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  cursor: pointer;
+}

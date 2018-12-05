@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+$light-background: #fff;
+$dark-background: #002c71;
+$users-names: #002c71;
+$city-and-input-color: #8298b9;
+$date-color: #002c71;
+$bright-color: #ffa640;
+$main-text: #444444;
+$light-icon-color: #d9d9d9;
+$icon-size: 17px;
+$main-font: "Montserrat", sans-serif;
+
+%box-shadow-radius {
+  box-shadow: 0 0 4px 0 rgba(172, 172, 172, 0.5);
+  border-radius: 5px;
+}
+
+.container {
+  @extend %box-shadow-radius;
+  margin-top: 20px;
+  background: $light_background;
+  position: relative;
+  font-family: $main-font;
+}
+.top-dark {
+  background: $dark-background;
+  border-radius: 5px 5px 0 0;
+  height: 95px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.inside-container {
+  position: relative;
+  top: 36px;
+}
+
+@import "user-data";
+@import "comments";
+@import "modal";
+
+@media only screen and (min-width: 500px) {
+  .user-img {
+    position: static;
+    margin: 0 20px 0 0;
+  }
+  .user-info-container {
+    display: flex;
+  }
+  .user-info {
+    align-items: flex-start;
+  }
+  .follow-button {
+    width: auto;
+    margin-top: 0;
+  }
+}

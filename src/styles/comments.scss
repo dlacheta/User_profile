@@ -1,0 +1,89 @@
+.comments {
+  @extend %box-shadow-radius;
+  background: $light_background;
+  margin: 0 17px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  button {
+    border: 0;
+    margin: 20px 0;
+    font-size: 14px;
+    color: $bright-color;
+    background: $light-background;
+    text-decoration: underline;
+  }
+}
+.container-fluid {
+  width: 100%;
+}
+.comments-scroll {
+  display: flex;
+  font-size: 14px;
+  color: $main-text;
+  line-height: 21px;
+  padding: 20px;
+  border-bottom: 1px solid #ebebeb;
+
+  h4 {
+    color: $users-names;
+    margin: 0;
+  }
+}
+.comment-img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+.comment-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+.comment-date {
+  font-size: 14px;
+  color: $date-color;
+  opacity: 0.5;
+}
+.comments-scroll-container {
+  overflow: auto;
+  max-height: 400px;
+}
+.comments-scroll-container::-webkit-scrollbar {
+  width: 5px;
+}
+.comments-scroll-container::-webkit-scrollbar-track {
+  background: #d8d8d8;
+  border-radius: 100px;
+  opacity: 0.3;
+}
+.comments-scroll-container::-webkit-scrollbar-thumb {
+  background: #002c71;
+  border-radius: 100px;
+  opacity: 0.12;
+}
+.comments-scroll:last-child {
+  border-bottom: 0;
+}
+.comment-form {
+  border-top: 1px solid #ebebeb;
+  background: $light_background;
+  width: 100%;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+
+  input[type="text"] {
+    font-size: 18px;
+    color: $city-and-input-color;
+    width: calc(100% - 40px);
+    border: 0;
+    border-bottom: 2px solid #dbe0e8;
+    outline: none;
+    padding: 10px 0;
+    margin: 20px;
+  }
+  input::placeholder {
+    color: $city-and-input-color;
+  }
+}
