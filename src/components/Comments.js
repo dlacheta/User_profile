@@ -27,6 +27,8 @@ export class Comments extends React.Component {
     }
   }
 
+  
+
   scrollToBottom() {
     this.messagesEnd.current.scrollIntoView({ behavior: 'smooth' });
   }
